@@ -522,3 +522,4 @@ int find_win(char symbol)
 }
 ```
 
+All the above code needed for Tic Tac Toe is in the file above ```ticTacToe.c```.
