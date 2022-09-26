@@ -177,6 +177,7 @@ Determine the win/lose/tie conditions
 Ask a player if they want to play again
 
 #### FUNCTION PROTOTYPES
+```c
 void init_board(void);
 void draw_board(void);
 int user_first(void);
@@ -190,12 +191,16 @@ void computer_move(void);
 int square_valid(int);
 void player_move(void);
 void play_game(void);
+```
 
 #### GLOBAL VARIABLES
+```c
 char board[3][3];
 char computer, user;
+```
 
 #### MAIN
+```c
 /* 
  * Initialize the board, ask who goes first, play a game,
  * ask if the user wants to play again.
@@ -221,9 +226,9 @@ int main(void)
   }
   return 0;
 }
-
+```c
 #### BOARD FUNCTIONS
-
+```c
 * Make sure board starts off empty. */
 void init_board(void)
 {
@@ -255,9 +260,10 @@ void draw_board(void)
 
   return;
 }
+```
 
 #### GAME FLOW FUNCTIONS
-
+```c
 /*
  * Ask if user wants to go first.
  * Returns 1 if yes, 0 if no.
@@ -299,9 +305,9 @@ int play_again(void)
   else
     return 0;
 }
-
+```
 #### GAMEPLAY
-
+```c
 /* Loop through 9 turns or until somebody wins. */
 void play_game(void)
 {
@@ -341,8 +347,9 @@ void play_game(void)
   printf("\nThe game is a draw.\n\n");
   return;
 }
-
+```
 #### PLAYER MOVE FUNCTIONS
+```c
 /* Have the user choose a move. */
 void player_move(void)
 {
@@ -362,9 +369,10 @@ void player_move(void)
 
   return;
 }
+```
 
 #### COMPUTER MOVE FUNCTIONS
-
+```c
 /*
  * If middle square is empty, return 5;
  * otherwise return 0.
@@ -439,9 +447,9 @@ void computer_move(void)
 
   return;
 }
-
+```
 #### WIN CONDITION
-
+```c
 /* Check if the given symbol has already won the game. */
 int symbol_won(char symbol)
 {
@@ -512,7 +520,5 @@ int find_win(char symbol)
 
   return result;
 }
-
-Refer to github for full code in one file: https://hong3cooper.github.io/CS102B-Fall2021-Lesson5/ 
-
+```
 
