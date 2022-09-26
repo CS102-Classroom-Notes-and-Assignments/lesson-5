@@ -66,6 +66,11 @@ The declaration may be an explicit extern statement or may be implicit from cont
 
 If the program is in several source files, and a variable is defined in file1 and used in file2 and file3, then extern declarations are needed in file2 and file3 to connect the occurrences of the variable. The usual practice is to collect extern declarations of variables and functions in a separate file, historically called a header, that is included by #include at the front of each source file. The suffix .h is convention for header files.
 
+
+- External variables are defined outside of any function, and thus potentially available to many functions. 
+- Functions themselves are always external, because C does not allow functions to be defined inside other functions. 
+- External linkage - all references to them by the same name, even from functions compiled separately, are references to the same thing.
+
 _Definition_ = place where the variable is created or assigned storage
 
 _Declaration_ = place where the nature of the variable is stated but no storage is allocated
@@ -166,6 +171,11 @@ int main()
     return 0;
 }
 ```
+
+
+
+
+
 
 # TIC-TAC-TOE (Example by Prof. Sable)
 
