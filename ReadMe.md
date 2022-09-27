@@ -105,7 +105,7 @@ int main()
     }
 
     if (max > 0)
-        printf("%s", longest);
+        printf("\nlongest line: %s", longest);
 
     return 0;
 }
