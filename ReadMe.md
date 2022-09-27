@@ -49,6 +49,31 @@ int main ()
 }
 ```
 
+#### Above code rewritten:
+- reduce the amount of duplicate code as shown below
+```c
+#include <stdio.h>
+
+void isFreezing(float temperature) {
+	if (temperature<=32.0) {
+    	printf("Below\n");
+  	} else if (temperature>32.0) {
+    	printf("Above\n");
+  	}
+}
+
+int main ()
+{
+  float fahr1 = 41.5; 
+  float fahr2 = 29.1; 
+  
+  isFreezing(fahr1);
+  isFreezing(fahr2);
+
+  return 0;
+}
+
+```
 ## Example of Using a Function
 - The variables used in power are local to the function, the i in power() is not related to the i in main(). These local variables are also referred to as automatic variables. 
 
