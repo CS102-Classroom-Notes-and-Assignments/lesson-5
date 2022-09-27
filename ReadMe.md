@@ -15,7 +15,7 @@ return-type function-name(parameter declarations, if any)
   return
 }
 ```
-- The function declaration, called a function prototype, has to match with the function definition. It is an error if the definition of a function or any uses of it doe not agree with its prototype.
+- The function declaration, called a function prototype, has to match with the function definition. It is an error if the definition of a function or any uses of it does not agree with its prototype.
 - Parameter names do not have to match, and are in fact optional. The prototype for a power() function can be written as ```int power(int m, int n)```; Or ```int power(int, int)```. Later in the file the function will be defined as 
 
 ```
