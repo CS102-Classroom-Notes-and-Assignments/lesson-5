@@ -23,6 +23,32 @@ int power(int base, int n) {...}
 ```
 - The function must be declared and or defined before it is used in main.
 
+#### Example of why you should use a function:
+- reduce the amount of duplicate code as shown below
+```c
+#include <stdio.h>
+
+int main ()
+{
+  float fahr1 = 41.5; 
+  float fahr2 = 29.1; 
+  
+  if (fahr1<=32) { 
+    printf("\nBelow");
+  } else if (fahr1>32) {
+    printf("\nAbove");
+  }
+  
+  if (fahr2<=32) {
+    printf("\nBelow");
+  } else if (fahr2>32) {
+    printf("\nAbove");
+  }
+  
+  return 0;
+}
+```
+
 ## Example of Using a Function
 - The variables used in power are local to the function, the i in power() is not related to the i in main(). These local variables are also referred to as automatic variables. 
 
