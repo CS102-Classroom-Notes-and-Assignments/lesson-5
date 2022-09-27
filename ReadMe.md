@@ -154,7 +154,8 @@ For this reason we will skip an example on goto.
 
 ## Input & Output
 ### scanf
-Don't worry about what the syntax means for now
+- int scanf(const char *format, ...) reads formatted input from stdin. https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm
+- Don't worry about what the syntax means for now
 ```c
 #include <stdio.h>
 
