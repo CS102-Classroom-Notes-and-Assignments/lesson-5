@@ -237,10 +237,11 @@ int main(void)
   }
   return 0;
 }
-```c
+```
+
 #### BOARD FUNCTIONS
 ```c
-* Make sure board starts off empty. */
+/* Make sure board starts off empty. */
 void init_board(void)
 {
   int row, col;
