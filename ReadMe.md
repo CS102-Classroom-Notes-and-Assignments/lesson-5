@@ -591,4 +591,4 @@ All the above code needed for Tic Tac Toe is in the file above ```ticTacToe.c```
 
 # Homework
 - Reading: The C Programming Language, 2nd Edition - Kerninghan & Ritchie, Chapter 1.10, 4.3-4.11
-- homework link: 
+- homework link (due two classes from now, but its long, so get started now!): https://classroom.github.com/a/fFT-OWOY
