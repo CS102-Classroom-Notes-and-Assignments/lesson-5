@@ -214,7 +214,7 @@ extern double val[];
 Declare for the rest of the source file that sp is an int and that val is a double array (whose size is determined elsewhere), but they do not create the variables or reserve storage for them. 
 
 Array sizes must be specified with the definition, but are optional with an extern declaration. The initialization of an external variable goes only with the definition (you should nor declare and initialize a value with extern). So in the case that you defined the variables in a separate file1, then in file 2 it would look like:
-![alt text](scope.png)
+<img src="scope.png" width="600">
 
 https://www.geeksforgeeks.org/difference-between-definition-and-declaration/ 
 Declaration of a function provides the compiler with the name of the function, the number and type of arguments it takes, and its return type. For example, consider the following code,
