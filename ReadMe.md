@@ -194,6 +194,46 @@ void copy(void)
 }	
 ```
 
+## Scope Rules
+The scope of a name is the part of the program within which the name can be used. For an automatic variable declared at the beginning of a function, the scope is the function in which the name is declared. This is true of the parameters of the function, which are in effect local variables. 
+
+The scope of an external variable or a function lasts from the point at which it is declared to the end of the file being compiled. In the scope they can be used by just naming them. These external variables can be used outside of this scope if they are declared with the term “extern”.
+
+In C language definition and declaration for a variable takes place at the same time. i.e. there is no difference between declaration and definition.
+If the lines 
+```c
+int sp;
+double val[MAXVAL];
+```
+appear outside of any function, they define the external variables sp and val, cause storage to be set aside and also serve as the declarations for the rest of that source file. On the other hand, the lines
+```c
+extern int sp;
+extern double val[];
+```
+Declare for the rest of the source file that sp is an int and that val is a double array (whose size is determined elsewhere), but they do not create the variables or reserve storage for them. 
+
+Array sizes must be specified with the definition, but are optional with an extern declaration. The initialization of an external variable goes only with the definition (you should nor declare and initialize a value with extern). So in the case that you defined the variables in a separate file1, then in file 2 it would look like:
+https://www.geeksforgeeks.org/difference-between-definition-and-declaration/ 
+Declaration of a function provides the compiler with the name of the function, the number and type of arguments it takes, and its return type. For example, consider the following code,
+
+```c
+int add(int, int);
+```
+Here, a function named add is declared with 2 arguments of type int and return type int. Memory will not be allocated at this stage. Definition of the function is used for allocating memory for the function. For example, consider the following function definition,
+```c
+int add(int a, int b)
+  {
+    return (a+b);
+  }
+```
+During this function definition, the memory for the function add will be allocated.
+
+
+
+Use extern variables carefully - using too much can lead to programs where data connections are not all obvious - variables can be changs in unexpected and even inadvertent ways, and the program is hard to modify. 
+
+
+
 ## GOTO
 DO NOT USE, this can usually be replaced with other more readable code
 
