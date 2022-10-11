@@ -58,7 +58,7 @@ void isFreezing(float temperature)
 {
     if (temperature<=32.0) {
         printf("Below\n");
-    } else if (temperature>32.0) {
+    } else  {
         printf("Above\n");
     }
 }
